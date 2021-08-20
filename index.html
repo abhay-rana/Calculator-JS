@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="main">
+        <h1 id="mode">DAY</h1>
+        <div class="dinraat" data-mode="light" onClick="changeMode(this)">
+            <span id="new" class="fas fa-moon"></span>
+        </div>
+        <div class="calc">
+            <div class="header">CALCULATOR</div>
+            <div class="result">
+                <h1 id="output">0</h1>
+                <p id="input"></p>
+            </div>
+            <div class="buttons">
+                <div class="symbol" onclick="calulate('C')"><span class="btn">C</span></div>
+                <div class="symbol" onclick="calulate('AC')"><span class="btn">AC</span></div>
+                <div class="symbol" onclick="calulate('%')"><span class="btn">%</span></div>
+                <div class="symbol" onclick="calulate('/')"><span class="btn">/</span></div>
+                <div onclick="calulate('7')"><span class="btn">7</span></div>
+                <div onclick="calulate('8')"><span class="btn">8</span></div>
+                <div onclick="calulate('9')"><span class="btn">9</span></div>
+                <div  onclick="calulate('*')"class="symbol"><span class="btn">*</span></div>
+                <div onclick="calulate('4')"><span class="btn">4</span></div>
+                <div onclick="calulate('5')"><span class="btn">5</span></div>
+                <div onclick="calulate('6')"><span class="btn">6</span></div>
+                <div class="symbol" onclick="calulate('-')"><span class="btn">-</span></div>
+                <div onclick="calulate('1')"><span class="btn">1</span></div>
+                <div onclick="calulate('2')"><span class="btn">2</span></div>
+                <div onclick="calulate('3')"><span class="btn">3</span></div>
+                <div  onclick="calulate('+')"class="symbol"><span class="btn">+</span></div>
+                <div onclick="calulate('0')"><span class="btn">0</span></div>
+                <div onclick="calulate('00')"><span class="btn">00</span></div>
+                <div onclick="calulate('.')" class="symbol"><span class="btn">.</span></div>
+                <div onclick="calulate('=')" class="symbol dark"><span class="btn">=</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
